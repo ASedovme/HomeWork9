@@ -47,5 +47,16 @@ public class Main {
         for (i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
+        System.out.println(" ");
+        //Другая версия
+        int n = reverseFullName.length;
+        char temp;
+        for (i=0;i< n/2; i++){
+            temp=reverseFullName[n-i-1];
+            reverseFullName[n-i-1]=reverseFullName[i];
+            reverseFullName[i]=temp;
+        }
+        for (i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[i]);
     }
-}
+}}
